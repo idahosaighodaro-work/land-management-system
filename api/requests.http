@@ -1,0 +1,14 @@
+POST http://localhost:8000/api/requests
+Content-Type: application/json
+
+{
+  "title": "Need help",
+  "description": "Deployment issue",
+  "user_id": 1
+}
+###
+
+GET http://localhost:8000/api/requests?skip=0&limit=10
+
+Content-Type: application/json
+Accept: application/json
